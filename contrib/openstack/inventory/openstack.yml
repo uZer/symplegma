@@ -1,0 +1,10 @@
+plugin: openstack
+expand_hostvars: yes
+fail_on_errors: yes
+keyed_groups:
+  - key: tags.Name
+    prefix: tag_Name_
+    separator: ""
+groups:
+  # add hosts to the group development if any of the dictionary's keys or values is the word 'devel'
+  master: "'master' in (tags|list)"

@@ -1,4 +1,5 @@
 *.retry
+*.pyc
 kubeconfig/*
 site/*
 inventory/aws/
